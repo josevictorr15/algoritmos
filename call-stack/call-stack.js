@@ -14,3 +14,17 @@ sauda("José");
 // Cada vez que você faz uma chamada de função, seu computador salva na memória os valores para todas as variáveis
 
 // ** Quando a função sauda2 foi chamada, a função sauda ficou parcialemente completa
+
+
+
+// PILHA DE CHAMADA COM RECURSIVIDADE
+
+const fat = (num) => {
+    if (num == 1) {
+        return 1
+    } else {
+        return num * fat(num-1)
+    }
+}
+
+console.log(fat(5))
